@@ -15,14 +15,13 @@
 var NOTIFICATION_TIMEOUT = 3000;
 
 function notify(logo, title, opt_body) {
-  var body = opt_body || '';
-  var notification = webkitNotifications.createNotification(logo,
-      title, body);
-  notification.show();
-  var clear = function() {
-    notification.cancel();
-  }
-  window.setTimeout(clear, NOTIFICATION_TIMEOUT);
+    chrome.notifications.create('chrome-task-extension', {
+        type: 'basic',
+        title: title,
+        message: opt_body || '',
+        iconUrl: logo
+    });
+
 }
 
 function notifySuccess(body) {

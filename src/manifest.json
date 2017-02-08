@@ -1,15 +1,14 @@
 {
   "name": "Google Tasks (by Google)",
-  "version": "1.0",
-  "description": "Official Chrome Extension for Google Tasks",
+  "version": "1.3",
+  "description": "Chrome Extension for Google Tasks",
+  "background": {
+    "page": "background.html"
+  },
   "browser_action": {
     "default_icon": "images/tasks-19x19.png",
-    "default_title": "Google Tasks",
-    "popup": "popup.html"
-  },
-  "background_page": "background.html",
-  "omnibox": {
-    "keyword": "t"
+    "default_popup": "popup.html",
+    "default_title": "Google Tasks"
   },
   "icons": {
     "16": "images/tasks-16x16.png",
@@ -17,13 +16,25 @@
     "48": "images/tasks-48x48.png",
     "128": "images/tasks-128x128.png"
   },
+  "manifest_version": 2,
+  "omnibox": {
+    "keyword": "t"
+  },
+  "oauth2": {
+    "client_id": "419113624893-ah6vmpftkbh03mniast5mech60j9naqh.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/tasks"
+    ]
+  },
   "permissions": [
     "contextMenus",
+    "identity",
     "notifications",
     "tabs",
     "http://www.google.com/",
     "https://www.google.com/",
     "http://www.googleapis.com/",
     "https://www.googleapis.com/"
-  ]
+  ],
+  "update_url": "http://clients2.google.com/service/update2/crx"
 }

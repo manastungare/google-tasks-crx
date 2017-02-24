@@ -21,7 +21,7 @@
     "keyword": "t"
   },
   "oauth2": {
-    "client_id": "419113624893-ah6vmpftkbh03mniast5mech60j9naqh.apps.googleusercontent.com",
+    "client_id": "128956800042-pbaup1aqb2s998m82gliv03cua764p3t.apps.googleusercontent.com",
     "scopes": [
       "https://www.googleapis.com/auth/tasks"
     ]
@@ -35,6 +35,5 @@
     "https://www.google.com/",
     "http://www.googleapis.com/",
     "https://www.googleapis.com/"
-  ],
-  "update_url": "http://clients2.google.com/service/update2/crx"
+  ]
 }

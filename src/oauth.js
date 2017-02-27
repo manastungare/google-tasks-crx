@@ -11,6 +11,7 @@
 var oauth = {};
 
 oauth.sendSignedRequest = function(url, callback, req) {
+  var body = req.body || null;
   chrome.identity.getAuthToken({interactive: true}, function(token) {
     var xhr = new XMLHttpRequest(); 
     xhr.onreadystatechange = function(data) {

@@ -5,6 +5,7 @@
   "background": {
     "page": "background.html"
   },
+  "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCv4GeVWgGortGXONLDwRfRTVxPgXZuC/sOSjxt68s8Dv3JMQ3WOGMCPc0ncsHwvg93qR7hhW+ZeddjVVt0dyGMiU4EhxqKog7/j9W1IO9/dbMVDNandoVRjNDoAt6elUI7wZLgyw+cVVEy/okFws4DVFGKVGiLJP4jeuJs6Z5yEQIDAQAB",
   "browser_action": {
     "default_icon": "images/tasks-19x19.png",
     "default_popup": "popup.html",
@@ -31,9 +32,7 @@
     "identity",
     "notifications",
     "tabs",
-    "http://www.google.com/",
     "https://www.google.com/",
-    "http://www.googleapis.com/",
     "https://www.googleapis.com/"
   ]
 }

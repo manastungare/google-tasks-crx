@@ -3,7 +3,12 @@
   "version": "1.3",
   "description": "Chrome Extension for Google Tasks",
   "background": {
-    "page": "background.html"
+    "scripts": [
+      "oauth.js",
+      "tasksapi.js",
+      "menus.js",
+      "omnibox.js"
+    ]
   },
   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCv4GeVWgGortGXONLDwRfRTVxPgXZuC/sOSjxt68s8Dv3JMQ3WOGMCPc0ncsHwvg93qR7hhW+ZeddjVVt0dyGMiU4EhxqKog7/j9W1IO9/dbMVDNandoVRjNDoAt6elUI7wZLgyw+cVVEy/okFws4DVFGKVGiLJP4jeuJs6Z5yEQIDAQAB",
   "browser_action": {

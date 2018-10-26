@@ -1,6 +1,6 @@
 {
-  "name": "Google Tasks (by Google)",
-  "version": "1.3",
+  "name": "Google Tasks",
+  "version": "1.3.1",
   "description": "Chrome Extension for Google Tasks",
   "background": {
     "scripts": [
